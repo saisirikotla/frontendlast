@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Sidebar from '../../components/common/Sidebar';
 import { adminAPI } from '../../services/api';
-import { useAuth } from '../../context/AuthContext';
 import { Package, Users, CheckCircle, AlertCircle, TrendingUp, Clock } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const AdminDashboard = () => {
-  const {  } = useAuth();
   const [stats, setStats] = useState(null);
   const [recentItems, setRecentItems] = useState([]);
   const [loading, setLoading] = useState(true);
