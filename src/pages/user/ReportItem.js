@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from '../../components/common/Sidebar';
 import { itemsAPI } from '../../services/api';
-import { CheckCircle, Upload, X, Image } from 'lucide-react';
+import { CheckCircle, Upload, X } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const CATEGORIES = ['ELECTRONICS','BOOKS','CLOTHING','ACCESSORIES','DOCUMENTS','KEYS','BAGS','SPORTS','OTHERS'];
