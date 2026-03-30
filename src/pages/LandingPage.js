@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Zap, ArrowRight } from 'lucide-react';
+import { Search, ArrowRight } from 'lucide-react';
 import AnuragLogo from '../assets/AnuragLogo';
 
 const LandingPage = () => {

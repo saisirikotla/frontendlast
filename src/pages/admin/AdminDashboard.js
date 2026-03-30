@@ -6,7 +6,7 @@ import { Package, Users, CheckCircle, AlertCircle, TrendingUp, Clock } from 'luc
 import toast from 'react-hot-toast';
 
 const AdminDashboard = () => {
-  const { user } = useAuth();
+  const {  } = useAuth();
   const [stats, setStats] = useState(null);
   const [recentItems, setRecentItems] = useState([]);
   const [loading, setLoading] = useState(true);

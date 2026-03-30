@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import {
   LayoutDashboard, Search, PlusCircle, Package, LogOut,
-  Users, Menu, X
+  Users, X
 } from 'lucide-react';
 import AnuragLogo from '../../assets/AnuragLogo';
 import toast from 'react-hot-toast';
@@ -11,7 +11,7 @@ import toast from 'react-hot-toast';
 const Sidebar = () => {
   const { user, logout, isAdmin } = useAuth();
   const navigate = useNavigate();
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [, setMobileOpen] = useState(false);
 
   const handleLogout = () => {
     logout();
