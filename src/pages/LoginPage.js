@@ -26,7 +26,7 @@ const LoginPage = () => {
       navigate(role === 'ADMIN' ? '/admin' : '/dashboard');
     } catch (err) {
       let msg = 'Login failed. Please try again.';
-      if (!err.response) msg = 'Cannot connect to server. Make sure the backend is running on port 8080.';
+      if (!err.response) msg = 'Cannot connect to server. Make sure the backend is accessible.';
       else if (err.response.status === 400 || err.response.status === 401) msg = 'Invalid email or password.';
       else if (typeof err.response.data === 'string') msg = err.response.data;
       setError(msg);
@@ -123,7 +123,7 @@ const LoginPage = () => {
         </div>
 
         <div style={{ marginTop: 14, padding: '9px 14px', background: 'rgba(79,142,247,0.07)', border: '1px solid rgba(79,142,247,0.18)', borderRadius: 'var(--radius-sm)', fontSize: 11, color: 'var(--text-secondary)', textAlign: 'center' }}>
-          💡 Make sure the Spring Boot backend is running on <strong style={{ color: 'var(--accent-primary)' }}>localhost:8080</strong>
+          💡 Make sure the Spring Boot backend is <strong style={{ color: 'var(--accent-primary)' }}>live</strong>
         </div>
       </div>
     </div>
